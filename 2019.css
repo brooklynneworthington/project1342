@@ -1,3 +1,54 @@
+/** FONTS **/
+
+@font-face {
+    font-family: 'ogg';
+    src: url('fonts/ogg.woff') format('woff'),
+         url('fonts/ogg.woff2') format('woff2'),
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'lausanne';
+    src: url('fonts/lausanne.woff') format('woff'),
+         url('fonts/lausanne.woff2') format('woff2'),
+    font-weight: normal;
+    font-style: normal;
+}
+
+.timeline__content-title {
+  font-weight: normal;
+  font-size: 66px;
+  margin: -10px 0 0 0;
+  transition: .4s;
+  padding: 0 10px;
+  box-sizing: border-box;
+  font-family: "ogg", sans-serif;
+  color: #C7DB2A;
+}
+
+.timeline__content-desc {
+  margin: 0;
+  font-size: 15px;
+  box-sizing: border-box;
+  color: white;
+  font-family: lausanne;
+  font-weight: normal;
+  line-height: 25px;
+}
+
+.timeline-header__img {
+  width: 15em;
+}
+
+/** CURSOR**/
+
+body {
+  cursor: url('project1342/images/globe.png');
+
+}
+/** OTHER CRAP **/ 
+
 @import url("https://fonts.googleapis.com/css?family=Cardo|Pathway+Gothic+One");
 .timeline {
   display: flex;
@@ -7,25 +58,8 @@
   max-width: 80vw;
   position: relative;
 }
-.timeline__content-title {
-  font-weight: normal;
-  font-size: 66px;
-  margin: -10px 0 0 0;
-  transition: .4s;
-  padding: 0 10px;
-  box-sizing: border-box;
-  font-family: "Pathway Gothic One", sans-serif;
-  color: #fff;
-}
-.timeline__content-desc {
-  margin: 0;
-  font-size: 15px;
-  box-sizing: border-box;
-  color: rgba(255, 255, 255, 0.7);
-  font-family: Cardo;
-  font-weight: normal;
-  line-height: 25px;
-}
+
+
 .timeline:before {
   position: absolute;
   left: 50%;
@@ -33,7 +67,7 @@
   height: 100%;
   margin-left: -1px;
   content: "";
-  background: rgba(255, 255, 255, 0.07);
+  background: #C7DB2A;
 }
 @media only screen and (max-width: 767px) {
   .timeline:before {
@@ -56,7 +90,7 @@
   letter-spacing: 3px;
   width: 100%;
   position: absolute;
-  color: rgba(255, 255, 255, 0.5);
+  color: #C7DB2A;
   font-size: 13px;
   font-family: "Pathway Gothic One", sans-serif;
   border-left: 2px solid rgba(255, 255, 255, 0.5);
@@ -136,13 +170,7 @@
   margin-bottom: 80px;
   position: relative;
 }
-.timeline-header__title {
-  color: #fff;
-  font-size: 46px;
-  font-family: Cardo;
-  font-weight: normal;
-  margin: 0;
-}
+
 .timeline-header__subtitle {
   color: rgba(255, 255, 255, 0.5);
   font-family: "Pathway Gothic One", sans-serif;
