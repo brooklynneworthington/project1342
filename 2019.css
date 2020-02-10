@@ -43,9 +43,8 @@
 
 /** CURSOR**/
 
-body {
-  cursor: url('project1342/images/globe.png');
-
+.timeline-container:hover {
+    cursor: url(images/globe.png), default !important;
 }
 /** OTHER CRAP **/ 
 
